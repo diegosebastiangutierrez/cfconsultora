@@ -196,9 +196,9 @@ transform:skewX(-8deg)
 .metric strong { color: var(--brutal-red); font: 400 clamp(3rem, 5vw, 5.3rem)/.85 var(--display); letter-spacing: -.08em; }
 .metric span { color: var(--dark-grey); font-size: .85rem; line-height: 1.3; }
 .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.profile-card { min-height: 500px; padding: clamp(1.7rem, 3.6vw, 3rem); border: 1px solid rgba(29, 27, 28, .2); color: var(--almost-black);transition:transform .35s cubic-bezier(.2,.75,.25,1), box-shadow .35s ease }
+.profile-card { min-height: 500px; padding: clamp(1.7rem, 3.6vw, 3rem); border: 1px solid rgba(29, 27, 28, .2); overflow:hidden; color: var(--almost-black);transition:transform .35s cubic-bezier(.2,.75,.25,1), box-shadow .35s ease }
 .profile-card:hover { transform: translateY(-7px); box-shadow: 0 20px 35px rgba(29, 27, 28, .14); }
-.profile-card::after { content: ""; position: absolute; right: -3rem; bottom: -4.5rem; width: 15rem; height: 15rem; border: 1px solid currentColor; border-radius: 50%; opacity: .19; }
+.profile-card::after { content: ""; position: absolute; right: -3rem; bottom: -4.5rem; width: 15rem; height: 15rem; border: 1px solid currentColor; border-radius: 50%; opacity: .19; z-index:-1 }
 .claudia-card { background: var(--khaki); }
 .marcela-card { background: var(--light-grey); }
 .profile-portrait { display: block; width: 100%; aspect-ratio: 4 / 3; margin-bottom: clamp(1.8rem, 3vw, 2.8rem); border-radius: .35rem; object-fit: cover; object-position: center 20%; filter: saturate(.82) contrast(1.04); }
