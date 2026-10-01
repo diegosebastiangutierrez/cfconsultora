@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso Legal | CF Consultora</title>
+  <meta name="description" content="Aviso legal de CF Consultora. Términos y condiciones de uso del sitio web.">
+  <link rel="stylesheet" href="public/styles.css">
+  <style>
+    .legal-page {
+      background: var(--light-grey);
+      min-height: 100vh;
+      padding: 6rem 0 4rem;
+    }
+    .legal-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: white;
+      border: 2px solid var(--almost-black);
+      box-shadow: 8px 8px 0 var(--almost-black);
+    }
+    .legal-content h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--almost-black);
+    }
+    .legal-content .last-updated {
+      font-size: 0.9rem;
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--light-grey);
+    }
+    .legal-content h2 {
+      font-family: var(--display);
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--almost-black);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .legal-content h2::before {
+      content: attr(data-number);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--brutal-red);
+      color: white;
+      font-family: var(--body);
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legal-content p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      color: var(--dark-grey);
+    }
+    .legal-content ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--dark-grey);
+    }
+    .legal-content li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .legal-content strong {
+      color: var(--almost-black);
+      font-weight: 700;
+    }
+    .legal-content a {
+      color: var(--brutal-red);
+      text-decoration: underline;
+    }
+    .legal-content a:hover {
+      color: var(--dark-blue);
+    }
+    
+    /* ⚠️ CLASE PARA RESALTAR DATOS POR REVISAR */
+    .pending-review {
+      background: rgba(95, 236, 243, 0.2); /* Light-blue sutil */
+      border-bottom: 2px dashed var(--brutal-red);
+      padding: 0 4px;
+      font-family: var(--body);
+      cursor: help;
+      position: relative;
+    }
+    .pending-review:hover {
+      background: rgba(95, 236, 243, 0.4);
+    }
+    .pending-review::after {
+      content: "⚠ Revisar";
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--almost-black);
+      color: var(--light-grey);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .pending-review:hover::after {
+      opacity: 1;
+    }
+
+    /* Banner de advertencia superior */
+    .review-banner {
+      background: var(--brutal-red);
+      color: white;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border: 2px solid var(--almost-black);
+      box-shadow: 4px 4px 0 var(--almost-black);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .review-banner svg {
+      flex-shrink: 0;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--almost-black);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      color: var(--brutal-red);
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .legal-content {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+      }
+      .legal-content h2::before {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a aria-label="CF Consultora — inicio" class="brand" href="index.html">
+      <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+      <span>
+        <strong>CF</strong>
+        <em>Consultora</em>
+      </span>
+    </a>
+    <nav aria-label="Navegación principal" class="desktop-nav">
+      <a href="index.html#enfoque">Enfoque</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#metodo">Método</a>
+      <a href="index.html#equipo">Equipo</a>
+      <a href="index.html#resultados">Resultados</a>
+      <a href="index.html#diferencial">Diferencial</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="header-action">
+      <a class="button button-dark" href="index.html#contacto">
+        Hablemos
+        <svg class="lucide lucide-arrow-up-right" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 7h10v10"></path>
+          <path d="M7 17 17 7"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="content-wrap">
+      <a href="index.html" class="back-link">
+        <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
+        </svg>
+        Volver al inicio
+      </a>
+
+      <!-- Banner de advertencia para recordar los pendientes -->
+      <div class="review-banner">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        Este documento contiene datos pendientes de revisión (resaltados en azul con borde punteado). Pasá el mouse sobre ellos para ver el detalle.
+      </div>
+
+      <div class="legal-content">
+        <h1>Aviso Legal</h1>
+        <p class="last-updated">Última actualización: 24 de Septiembre de 2025</p>
+
+        <h2 data-number="01">Identificación</h2>
+        <p>Este sitio web es propiedad de <strong>CF Consultora</strong>, una consultora especializada en Recursos Humanos, liderada por Claudia Fernández. En adelante, "CF Consultora", "nosotros" o "nuestro sitio".</p>
+        <p><strong>Nombre:</strong> Claudia Fernandez Consultora RRHH<br>
+          <strong>Responsable:</strong> Claudia Fernández<br>
+          <strong>Email:</strong> <span class="pending-review" title="Verificar si este es el email definitivo para el sitio web">claudiaf@claudiafernandezconsultorarrhh.com</span><br>
+          <strong>Ubicación:</strong> <span class="pending-review" title="Confirmar dirección exacta o si agregar dirección fiscal">Ciudad de México, México</span>
+        </p>
+
+        <h2 data-number="02">Objeto</h2>
+        <p>El presente Aviso Legal regula el uso del sitio web <span class="pending-review" title="El sitio ya está publicado, eliminar 'en construcción' y actualizar dominio si cambia">www.cfconsultora.com (en construcción)</span>, incluyendo los contenidos, servicios y condiciones de acceso.</p>
+
+        <h2 data-number="03">Propiedad Intelectual</h2>
+        <p>Todos los contenidos del sitio (textos, diseños, logotipos, videos, imágenes, marcas) son propiedad exclusiva de CF Consultora o están debidamente autorizados para su uso. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.</p>
+
+        <h2 data-number="04">Uso del Sitio</h2>
+        <p>El acceso y uso del sitio implica la aceptación de estos términos. El usuario se compromete a utilizarlo de forma responsable, respetando la legislación vigente y los derechos de terceros.</p>
+
+        <h2 data-number="05">Servicios Ofrecidos</h2>
+        <p>CF Consultora ofrece servicios de:</p>
+        <ul>
+          <li>Reclutamiento y selección de personal</li>
+          <li>Consultoría estratégica en RRHH</li>
+          <li>Coaching profesional y ejecutivo</li>
+          <li>Análisis grafológico aplicado a RRHH</li>
+        </ul>
+        <p>Estos servicios se prestan bajo contratos específicos y confidencialidad profesional.</p>
+
+        <h2 data-number="06">Limitación de Responsabilidad</h2>
+        <p>CF Consultora no será responsable por:</p>
+        <ul>
+          <li>Daños directos o indirectos derivados del uso del sitio</li>
+          <li>Decisiones tomadas por usuarios basadas en información general del sitio</li>
+          <li>Interrupciones técnicas o fallos en el servicio web</li>
+        </ul>
+        <p>El contenido del sitio se proporciona a título informativo y no constituye asesoramiento legal o laboral vinculante.</p>
+
+        <h2 data-number="07">Enlaces a Terceros</h2>
+        <p>El sitio puede incluir enlaces a redes sociales (LinkedIn, WhatsApp, Instagram) o plataformas externas. No asumimos responsabilidad por el contenido o políticas de privacidad de dichos sitios.</p>
+
+        <h2 data-number="08">Legislación y Jurisdicción</h2>
+        <p>Este Aviso Legal se rige por las leyes de la República Argentina. Cualquier disputa se resolverá de manera amistosa o, en su defecto, ante los tribunales competentes de la Ciudad de Buenos Aires.</p>
+
+        <h2 data-number="09">Contacto</h2>
+        <p>Para consultas sobre este Aviso Legal, puedes escribirnos a:</p>
+        <p><a href="mailto:claudiaf@claudiafernandezconsultorarrhh.com?subject=Aviso Legal" class="pending-review" title="Verificar si este es el email definitivo">claudiaf@claudiafernandezconsultorarrhh.com</a></p>
+        <p><strong>Claudia Fernandez Consultora RRHH</strong><br>
+          <span class="pending-review" title="Confirmar dirección exacta">Ciudad de México, México</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="legales">
+    <div class="content-wrap footer-top">
+      <a aria-label="CF Consultora — inicio" class="brand footer-brand" href="index.html">
+        <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+        <span>
+          <strong>CF</strong>
+          <em>Consultora</em>
+        </span>
+      </a>
+      <p>Transformamos empresas y carreras con ética, experiencia y enfoque humano.</p>
+      <div class="social-links">
+        <a aria-label="LinkedIn de Claudia Fernández" href="https://www.linkedin.com/in/claudia-fernandez-1aa04a14/" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-linkedin" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect height="12" width="4" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a aria-label="Instagram de CF Consultora" href="https://www.instagram.com/cfreclutandotalentos" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-instagram" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+        </a>
+        <a aria-label="WhatsApp de CF Consultora" href="https://wa.me/5215518262363" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-message-circle" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="content-wrap footer-bottom">
+      <span>© 2026 CF Consultora</span>
+      <span>Ciudad de México · América Latina</span>
+      <div>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

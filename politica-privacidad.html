@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | CF Consultora</title>
+  <meta name="description" content="Política de privacidad de CF Consultora. Cómo recopilamos, usamos y protegemos tus datos personales.">
+  <link rel="stylesheet" href="public/styles.css">
+  <style>
+    .legal-page {
+      background: var(--light-grey);
+      min-height: 100vh;
+      padding: 6rem 0 4rem;
+    }
+    .legal-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: white;
+      border: 2px solid var(--almost-black);
+      box-shadow: 8px 8px 0 var(--almost-black);
+    }
+    .legal-content h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--almost-black);
+    }
+    .legal-content .last-updated {
+      font-size: 0.9rem;
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--light-grey);
+    }
+    .legal-content h2 {
+      font-family: var(--display);
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--almost-black);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    /* Números en azul para diferenciar del Aviso Legal */
+    .legal-content h2::before {
+      content: attr(data-number);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--dark-blue);
+      color: white;
+      font-family: var(--body);
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legal-content p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      color: var(--dark-grey);
+    }
+    .legal-content ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--dark-grey);
+    }
+    .legal-content li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .legal-content strong {
+      color: var(--almost-black);
+      font-weight: 700;
+    }
+    .legal-content a {
+      color: var(--dark-blue);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .legal-content a:hover {
+      color: var(--brutal-red);
+    }
+    
+    /* 🎯 ESTILO PARA RESALTAR DATOS PENDIENTES DE REVISIÓN */
+    .pending-review {
+      position: relative;
+      background: #fff3cd;
+      border: 2px dashed var(--brutal-red);
+      padding: 0.25rem 0.5rem;
+      display: inline;
+      font-weight: 600;
+      color: var(--almost-black);
+    }
+    .pending-review::before {
+      content: '⚠ REVISAR';
+      position: absolute;
+      top: -12px;
+      right: -4px;
+      background: var(--brutal-red);
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 2px;
+      letter-spacing: 0.5px;
+      font-family: var(--body);
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    /* Bloque de resumen de revisiones */
+    .review-summary {
+      background: #fff3cd;
+      border-left: 4px solid var(--brutal-red);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      border-radius: 2px;
+    }
+    .review-summary h3 {
+      font-family: var(--body);
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--brutal-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .review-summary ul {
+      margin: 0;
+      padding-left: 1.5rem;
+      color: var(--almost-black);
+      font-size: 0.95rem;
+    }
+    .review-summary li {
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--almost-black);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      color: var(--dark-blue);
+      gap: 0.75rem;
+    }
+    
+    .legal-info-block {
+      background: var(--light-grey);
+      padding: 1.25rem;
+      border-left: 3px solid var(--dark-blue);
+      margin: 1rem 0 1.5rem;
+      line-height: 1.8;
+    }
+    
+    @media (max-width: 768px) {
+      .legal-content {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+      }
+      .legal-content h2::before {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a aria-label="CF Consultora — inicio" class="brand" href="index.html">
+      <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+      <span>
+        <strong>CF</strong>
+        <em>Consultora</em>
+      </span>
+    </a>
+    <nav aria-label="Navegación principal" class="desktop-nav">
+      <a href="index.html#enfoque">Enfoque</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#metodo">Método</a>
+      <a href="index.html#equipo">Equipo</a>
+      <a href="index.html#resultados">Resultados</a>
+      <a href="index.html#diferencial">Diferencial</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="header-action">
+      <a class="button button-dark" href="index.html#contacto">
+        Hablemos
+        <svg class="lucide lucide-arrow-up-right" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 7h10v10"></path>
+          <path d="M7 17 17 7"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="content-wrap">
+      <a href="index.html" class="back-link">
+        <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
+        </svg>
+        Volver al inicio
+      </a>
+
+      <div class="legal-content">
+        <h1>Política de Privacidad</h1>
+        <p class="last-updated">
+          <strong>Última actualización:</strong> 
+          <span class="pending-review">24 de septiembre de 2025</span>
+        </p>
+
+        <!-- 🎯 RESUMEN DE PUNTOS A REVISAR -->
+        <div class="review-summary">
+          <h3>⚠ Datos pendientes de revisión legal</h3>
+          <ul>
+            <li><strong>Fecha:</strong> Actualizar a 2026.</li>
+            <li><strong>Autoridad de control:</strong> El texto dice "autoridad de protección de datos" de forma genérica. Debe especificarse el organismo real (ej: <em>INAI</em> en México o <em>AAIP</em> en Argentina) para ser válido.</li>
+            <li><strong>Conservación de datos:</strong> Mencionas "5 años para procesos de reclutamiento". Bajo leyes modernas (como la LFPDPPP en México o GDPR), conservar CVs de no contratados por 5 años sin consentimiento explícito renovado puede ser considerado excesivo. Se sugiere revisar este plazo (usualmente 1-2 años).</li>
+          </ul>
+        </div>
+
+        <p>En <strong>CF Consultora</strong>, respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos tu información cuando visitas nuestro sitio web o te contactas con nosotros.</p>
+
+        <h2 data-number="01">Información que Recopilamos</h2>
+        <p>Puedes visitar nuestro sitio sin proporcionar datos personales. Sin embargo, si deseas contactarnos, suscribirte a servicios o participar en procesos de reclutamiento, podríamos solicitar:</p>
+        <ul>
+          <li>Nombre completo</li>
+          <li>Correo electrónico</li>
+          <li>Teléfono</li>
+          <li>CV o información profesional</li>
+          <li>Datos de redes sociales (si los compartes)</li>
+        </ul>
+
+        <h2 data-number="02">Finalidad del Tratamiento</h2>
+        <p>Los datos se utilizan únicamente para:</p>
+        <ul>
+          <li>Gestionar consultas y solicitudes de contacto</li>
+          <li>Brindar servicios de reclutamiento, coaching o consultoría</li>
+          <li>Enviar información institucional (solo con consentimiento)</li>
+          <li>Realizar análisis grafológicos (confidenciales y con autorización)</li>
+        </ul>
+
+        <h2 data-number="03">Base Legal</h2>
+        <p>El tratamiento de tus datos se basa en:</p>
+        <ul>
+          <li>Tu consentimiento expreso</li>
+          <li>La ejecución de un servicio contratado</li>
+          <li>El interés legítimo en mejorar nuestras soluciones de RRHH</li>
+        </ul>
+
+        <h2 data-number="04">Confidencialidad y Seguridad</h2>
+        <p>Todos los datos son tratados con estricta confidencialidad. Aplicamos medidas técnicas y organizativas para proteger tu información contra accesos no autorizados, pérdida o alteración.</p>
+        <p>No compartimos tus datos con terceros, salvo por obligación legal o para cumplir servicios específicos (ej. empresas que buscan talento, con tu autorización).</p>
+
+        <h2 data-number="05">Derechos del Titular</h2>
+        <p>Tienes derecho a:</p>
+        <ul>
+          <li>Solicitar acceso, corrección o eliminación de tus datos</li>
+          <li>Oponerte al tratamiento o limitarlo</li>
+          <li>Revocar tu consentimiento en cualquier momento</li>
+          <li>Presentar una reclamación ante la <span class="pending-review">autoridad de protección de datos</span></li>
+        </ul>
+        <p>Para ejercer estos derechos, contáctanos a: <a href="mailto:claudiaf@claudiafernandezconsultorarrhh.com?subject=Ejercicio de Derechos ARCO">claudiaf@claudiafernandezconsultorarrhh.com</a></p>
+
+        <h2 data-number="06">Conservación de Datos</h2>
+        <p>Tus datos se conservarán mientras sea necesario para el fin para el cual fueron recopilados, o según lo exija la legislación vigente (ej. <span class="pending-review">5 años</span> para procesos de reclutamiento).</p>
+
+        <h2 data-number="07">Cambios en esta Política</h2>
+        <p>Nos reservamos el derecho de actualizar esta Política de Privacidad. Cualquier cambio será publicado en esta página con la fecha de revisión.</p>
+
+        <div class="legal-info-block">
+          <strong>Claudia Fernandez Consultora RRHH</strong><br>
+          claudiaf@claudiafernandezconsultorarrhh.com<br>
+          <span class="pending-review">[Agregar dirección física completa aquí, es un requisito legal en la mayoría de las políticas de privacidad]</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="legales">
+    <div class="content-wrap footer-top">
+      <a aria-label="CF Consultora — inicio" class="brand footer-brand" href="index.html">
+        <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+        <span>
+          <strong>CF</strong>
+          <em>Consultora</em>
+        </span>
+      </a>
+      <p>Transformamos empresas y carreras con ética, experiencia y enfoque humano.</p>
+      <div class="social-links">
+        <a aria-label="LinkedIn de Claudia Fernández" href="https://www.linkedin.com/in/claudia-fernandez-1aa04a14/" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-linkedin" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect height="12" width="4" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a aria-label="Instagram de CF Consultora" href="https://www.instagram.com/cfreclutandotalentos" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-instagram" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+        </a>
+        <a aria-label="WhatsApp de CF Consultora" href="https://wa.me/5215518262363" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-message-circle" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="content-wrap footer-bottom">
+      <span>© 2026 CF Consultora</span>
+      <span>Ciudad de México · América Latina</span>
+      <div>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

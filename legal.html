@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso Legal | CF Consultora</title>
+  <meta name="description" content="Aviso legal de CF Consultora. Términos y condiciones de uso del sitio web.">
+  <link rel="stylesheet" href="public/styles.css">
+  <style>
+    .legal-page {
+      background: var(--light-grey);
+      min-height: 100vh;
+      padding: 6rem 0 4rem;
+    }
+    .legal-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: white;
+      border: 2px solid var(--almost-black);
+      box-shadow: 8px 8px 0 var(--almost-black);
+    }
+    .legal-content h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--almost-black);
+    }
+    .legal-content .last-updated {
+      font-size: 0.9rem;
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--light-grey);
+    }
+    .legal-content h2 {
+      font-family: var(--display);
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--almost-black);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .legal-content h2::before {
+      content: attr(data-number);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--brutal-red);
+      color: white;
+      font-family: var(--body);
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legal-content p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      color: var(--dark-grey);
+    }
+    .legal-content ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--dark-grey);
+    }
+    .legal-content li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    .legal-content strong {
+      color: var(--almost-black);
+      font-weight: 700;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--almost-black);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      color: var(--brutal-red);
+      gap: 0.75rem;
+    }
+    @media (max-width: 768px) {
+      .legal-content {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+      }
+      .legal-content h2::before {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a aria-label="CF Consultora — inicio" class="brand" href="index.html">
+      <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+      <span>
+        <strong>CF</strong>
+        <em>Consultora</em>
+      </span>
+    </a>
+    <nav aria-label="Navegación principal" class="desktop-nav">
+      <a href="index.html#enfoque">Enfoque</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#metodo">Método</a>
+      <a href="index.html#equipo">Equipo</a>
+      <a href="index.html#resultados">Resultados</a>
+      <a href="index.html#diferencial">Diferencial</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="header-action">
+      <a class="button button-dark" href="index.html#contacto">
+        Hablemos
+        <svg class="lucide lucide-arrow-up-right" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 7h10v10"></path>
+          <path d="M7 17 17 7"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="content-wrap">
+      <a href="index.html" class="back-link">
+        <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
+        </svg>
+        Volver al inicio
+      </a>
+
+      <div class="legal-content">
+        <h1>Aviso Legal</h1>
+        <p class="last-updated">Última actualización: [Fecha]</p>
+
+        <h2 data-number="01">Información General</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h2 data-number="02">Objeto</h2>
+        <p>El presente Aviso Legal regula el uso del sitio web <strong>[URL del sitio]</strong>, incluyendo los contenidos, servicios y condiciones de acceso.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac fringilla purus tincidunt nec. Morbi ultricies diam at libero euismod, sed tincidunt eros fermentum.</p>
+
+        <h2 data-number="03">Identificación del Titular</h2>
+        <p>En cumplimiento con el deber de información recogido en la normativa vigente, se facilitan los siguientes datos:</p>
+        <ul>
+          <li><strong>Titular:</strong> [Nombre completo o razón social]</li>
+          <li><strong>NIF/CIF:</strong> [Número de identificación fiscal]</li>
+          <li><strong>Domicilio:</strong> [Dirección completa]</li>
+          <li><strong>Email:</strong> [Email de contacto]</li>
+          <li><strong>Teléfono:</strong> [Teléfono de contacto]</li>
+          <li><strong>Actividad:</strong> Consultoría de Recursos Humanos</li>
+        </ul>
+
+        <h2 data-number="04">Condiciones de Uso</h2>
+        <p>El acceso y uso de este sitio web atribuye la condición de Usuario, que acepta, desde dicho acceso y/o uso, las presentes condiciones de uso aquí reflejadas.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+        <h2 data-number="05">Propiedad Intelectual</h2>
+        <p>Todos los contenidos del sitio web, entendiendo a título enunciativo y no limitativo, los textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece al titular.</p>
+        <p>Queda prohibida la reproducción, distribución, comunicación pública y transformación de estos elementos sin la autorización previa y por escrito del titular.</p>
+
+        <h2 data-number="06">Responsabilidad</h2>
+        <p>El titular no se hace responsable de los daños y perjuicios de cualquier naturaleza que pudieran derivarse del uso de este sitio web, incluyendo, a título enunciativo y no limitativo:</p>
+        <ul>
+          <li>Errores u omisiones en los contenidos</li>
+          <li>Falta de disponibilidad del sitio</li>
+          <li>Transmisión de virus o programas maliciosos</li>
+          <li>Daños en el equipo informático del usuario</li>
+        </ul>
+
+        <h2 data-number="07">Enlaces</h2>
+        <p>Este sitio web puede contener enlaces a sitios de terceros. El titular no se responsabiliza del contenido ni de la disponibilidad de dichos sitios enlazados.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac fringilla purus tincidunt nec.</p>
+
+        <h2 data-number="08">Modificaciones</h2>
+        <p>El titular se reserva el derecho a efectuar las modificaciones que considere oportunas en su sitio web, pudiendo cambiar, suprimir o añadir tanto los contenidos como los servicios, así como la forma en que estos aparezcan presentados.</p>
+
+        <h2 data-number="09">Legislación Aplicable</h2>
+        <p>Las presentes condiciones se regirán por la legislación vigente en [País]. Para la resolución de cualquier controversia que pudiera surgir con motivo de la interpretación o aplicación de estas condiciones, las partes se someterán a los Juzgados y Tribunales de [Ciudad].</p>
+
+        <h2 data-number="10">Contacto</h2>
+        <p>Para cualquier consulta relacionada con este Aviso Legal, puede contactar con el titular a través de:</p>
+        <ul>
+          <li>Email: [Email de contacto]</li>
+          <li>Teléfono: [Teléfono de contacto]</li>
+          <li>Dirección postal: [Dirección completa]</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="legales">
+    <div class="content-wrap footer-top">
+      <a aria-label="CF Consultora — inicio" class="brand footer-brand" href="index.html">
+        <img alt="" height="42" src="public/images/logo.svg" width="42"/>
+        <span>
+          <strong>CF</strong>
+          <em>Consultora</em>
+        </span>
+      </a>
+      <p>Transformamos empresas y carreras con ética, experiencia y enfoque humano.</p>
+      <div class="social-links">
+        <a aria-label="LinkedIn de Claudia Fernández" href="https://www.linkedin.com/in/claudia-fernandez-1aa04a14/" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-linkedin" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect height="12" width="4" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a aria-label="Instagram de CF Consultora" href="https://www.instagram.com/cfreclutandotalentos" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-instagram" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+        </a>
+        <a aria-label="WhatsApp de CF Consultora" href="https://wa.me/5215518262363" rel="noreferrer" target="_blank">
+          <svg class="lucide lucide-message-circle" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="content-wrap footer-bottom">
+      <span>© 2026 CF Consultora</span>
+      <span>Ciudad de México · América Latina</span>
+      <div>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
