@@ -121,7 +121,7 @@ h1 i, h2 i { color: var(--brutal-red); font-weight: 400; }
 .hero-art { position: relative; min-height: 510px; padding: 1.5rem 0 2rem 1.5rem; }
 .hero-art-frame { position: absolute; inset: 0; overflow: hidden; background: var(--khaki); }
 .hero-art-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(130deg, rgba(29, 27, 28, .12), transparent 55%); mix-blend-mode: multiply; pointer-events: none; }
-.hero-art-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 55% center; transform: translateY(var(--hero-shift, 0)); transition: transform .1s linear; }
+.hero-art-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 55% center; transition: transform .1s linear; }
 .hero-art-note { position: absolute; right: 0; bottom: 0; display: flex; align-items: flex-end; gap: .9rem; width: min(260px, 76%); padding: 1.1rem 1.2rem; background: var(--almost-black); color: var(--light-grey); }
 .hero-art-note span { color: var(--brutal-red); font: 400 2rem/.8 var(--display); }
 .hero-art-note p { margin: 0; font-size: .68rem; line-height: 1.4; }
