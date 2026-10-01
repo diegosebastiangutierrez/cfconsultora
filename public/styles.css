@@ -333,6 +333,7 @@ color: var(--light-grey);
   .section-intro { grid-column: auto; margin-top: .2rem; }
   .audience-grid, .team-grid { grid-template-columns: 1fr; }
   .audience-card { min-height: 315px; }
+  .contact.section-padding{padding:6rem 1.5rem}
   .statement-content { grid-template-columns: 2.4rem 1fr; }
   .statement-content > svg { width: 27px; }
   .service-row { grid-template-columns: 2.3rem 1fr 2.1rem; gap: .8rem; align-items: start; min-height: 0; padding: 1.45rem 0; }
