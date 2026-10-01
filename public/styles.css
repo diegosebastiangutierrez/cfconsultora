@@ -324,8 +324,8 @@ color: var(--light-grey);
   .hero-description { font-size: 1rem; }
   .hero-proof { gap: 1.4rem; margin-top: 2.6rem; }
   .hero-art { min-height: 360px; padding-left: .8rem; }
-  .hero-art-frame { right: 0; bottom: 2.2rem; }
-  .hero-art-note { right: -.25rem; width: 78%; }
+  .hero-art-frame { right: 0; }
+  .hero-art-note { right: 0; width: 78%; }
   .scroll-cue { position: relative; right: auto; bottom: auto; justify-content: center; width: 100%; margin-top: 2.25rem; }
   .section-padding { padding: 4.8rem 0; }
   .section-heading { grid-template-columns: 1fr; gap: .7rem; margin-bottom: 3rem; }
