@@ -360,7 +360,7 @@ color: var(--light-grey);
   .team-grid, .contact-card { grid-template-columns: 1fr; }
   .contact-channels { max-width: 600px; }
   .case-row { grid-template-columns: minmax(150px, .8fr) minmax(200px, 1.2fr) 2rem; gap: 1rem; }
-  .difference{background-size: 75%;padding-bottom:33%}
+  #busqueda{background-size: 75%;padding-bottom:33%}
 }
 
 @media (max-width: 640px) {
@@ -402,7 +402,7 @@ color: var(--light-grey);
   .case-index { grid-column: 2; grid-row: 1; }
   .case-row:hover { padding-block: 2.2rem; }
   .case-row:hover .case-logo { width: 64%; }
-  .difference{background-size: 75%; padding-bottom:33%}
+  #busqueda{background-size: 75%; padding-bottom:33%}
   .difference-list article { grid-template-columns: 2.6rem 1fr; }
   .contact-card { width: 100%; padding: 2.3rem 1.25rem; }
   .contact-actions { align-items: stretch; flex-direction: column; }
