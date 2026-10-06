@@ -288,10 +288,10 @@ details li svg, .profile-note svg { flex: 0 0 auto; color: var(--brutal-red); }
 .difference-list h3 { margin-bottom: .5rem; font: 400 1.65rem/1 var(--display); letter-spacing: -.04em; }
 .difference-list p { margin: 0; color: var(--dark-grey); font-size: .9rem; line-height: 1.6; }
 
-.contact { background-image:url(images/parallax-bg-01.jpg);background-attachment:fixed;background-position: center; }
+.contact { background-image:url(images/parallax-bg-01.webp);background-attachment:fixed;background-position: center; }
 .experience {
 background:var(--light);
-background-image:url('images/pexels-karola-g-4709466.jpg');
+background-image:url('images/pexels-karola-g-4709466.webp');
 background-repeat:no-repeat;
 background-size:cover;
 }
