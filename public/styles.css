@@ -144,7 +144,7 @@ backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 18px 4px;
 }
-.audiences, .services, .contact { background: var(--light); color: var(--almost-black); }
+.audiences, .services, .cases, .contact { background: var(--light); color: var(--almost-black); }
 
 #busquedas{
 background-image:url('images/business-meeting-brainstorming.svg');
