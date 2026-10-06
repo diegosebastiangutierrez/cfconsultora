@@ -169,7 +169,6 @@ padding-bottom:22%;
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   font-size: 0.95rem;
-  color: var(--almost-black);
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -222,7 +221,9 @@ transform:skewX(-8deg)
 .service-arrow { display: grid; width: 2.4rem; height: 2.4rem; place-items: center; border: 1px solid rgba(29, 27, 28, .2); border-radius: 50%; transition: background-color .25s ease, border-color .25s ease, color .25s ease, transform .25s ease; }
 .service-row:hover .service-arrow { border-color: var(--brutal-red); background: var(--brutal-red); color: var(--light-grey); transform: rotate(45deg); }
 
-.method, .cases { background: var(--light-grey); color: var(--almost-black); }
+.hero, .method, .experience { background: var(--light-grey); color: var(--almost-black); }
+
+
 .method-layout { display: grid; grid-template-columns: minmax(270px, .78fr) minmax(500px, 1.22fr); gap: clamp(3rem, 8vw, 10rem); }
 .method-intro { position: sticky; top: 8rem; align-self: start; }
 .method-intro h2 { margin-bottom: 1.35rem; }
