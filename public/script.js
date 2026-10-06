@@ -3,35 +3,28 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const progress = document.querySelector(".reading-progress span");
   const heroImage = document.querySelector(".hero-art-frame img");
-  const statementBand = document.querySelector(".statement-band");
   const revealItems = document.querySelectorAll(".reveal");
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
   const mobileLinks = document.querySelectorAll(".mobile-nav a");
 
-  if (!reducedMotion) {
-    root.classList.add("has-motion");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -6%" },
-    );
-    revealItems.forEach((item) => observer.observe(item));
-  }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          //entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -6%" },
+  );
+  revealItems.forEach((item) => observer.observe(item));
 
   const updateScroll = () => {
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const percentage = documentHeight > 0 ? Math.min((window.scrollY / documentHeight) * 100, 100) : 0;
     if (progress) progress.style.width = `${percentage}%`;
-    if (!reducedMotion && heroImage) {
-      heroImage.style.setProperty("--hero-shift", `${Math.min(window.scrollY * 0.035, 28)}px`);
-    }
   };
 
   updateScroll();
